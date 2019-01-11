@@ -1,30 +1,39 @@
 [submodule "suckless/dwm"]
 	path = suckless/dwm
-	url = https://github.com/chrisw310/dwm
+	url = git@github.com:chrisw310/dwm
 [submodule "suckless/surf"]
 	path = suckless/surf
-	url = https://github.com/chrisw310/surf
+	url = git@github.com:chrisw310/surf
 [submodule "suckless/st"]
 	path = suckless/st
-	url = /home/chris/suckless/st/
+	url = git@github.com:chrisw310/st
 [submodule "suckless/noice"]
 	path = suckless/noice
-	url = https://github.com/chrisw310/noice
+	url = git@github.com:chrisw310/noice
 [submodule "suckless/tpm"]
 	path = suckless/tpm
-	url = https://github.com/chrisw310/tpm
+	url = git@github.com:chrisw310/tpm
 [submodule "suckless/bgs"]
 	path = suckless/bgs
-	url = https://github.com/chrisw310/bgs
+	url = git@github.com:chrisw310/bgs
 [submodule "suckless/sxiv"]
 	path = suckless/sxiv
-	url = https://github.com/chrisw310/sxiv
+	url = git@github.com:chrisw310/sxiv
 [submodule "suckless/tabbed"]
 	path = suckless/tabbed
-	url = https://github.com/chrisw310/tabbed
+	url = git@github.com:chrisw310/tabbed
 [submodule "suckless/slock"]
 	path = suckless/slock
-	url = https://github.com/chrisw310/slock
+	url = git@github.com:chrisw310/slock
 [submodule "suckless/ircc"]
 	path = suckless/ircc
-	url = https://github.com/chrisw310/ircc
+	url = git@github.com:chrisw310/ircc
+[submodule "suckless/xscreenshot"]
+	path = suckless/xscreenshot
+	url = git@github.com:chrisw310/xscreenshot
+[submodule "suckless/dmenu"]
+	path = suckless/dmenu
+	url = git@github.com:chrisw310/dmenu
+[submodule "suckless/sent"]
+	path = suckless/sent
+	url = git@github.com:chrisw310/sent

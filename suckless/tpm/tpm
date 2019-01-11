@@ -1,0 +1,117 @@
+#!/bin/sh
+# Copyright (C) 2013-2016 Sören Tempel
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+umask 077
+
+##
+# Variables
+##
+
+GPG_OPTS="--quiet --yes --batch"
+STORE_DIR="${PASSWORD_STORE_DIR:-${HOME}/.password-store}"
+
+if [ -r "${STORE_DIR}/.gpg-id" ] && [ -z "${PASSWORD_STORE_KEY}" ]; then
+  read -r PASSWORD_STORE_KEY < "${STORE_DIR}/.gpg-id"
+fi
+
+##
+# Helper
+##
+
+abort() {
+  printf '%s\n' "${1}" 1>&2
+  exit 1
+}
+
+gpg() {
+  if [ -n "${PASSWORD_STORE_KEY}" ]; then
+    gpg2 $GPG_OPTS --recipient "${PASSWORD_STORE_KEY}" "$@"
+  else
+    gpg2 $GPG_OPTS --default-recipient-self "$@"
+  fi
+}
+
+readpw() {
+  if [ -t 0 ]; then
+    printf "%s" "${1}"
+    stty -echo
+  fi
+
+  IFS= read -r "${2}"
+  [ -t 0 ] && stty echo
+}
+
+##
+# Commands
+##
+
+show() {
+  entry_name="${1}"
+  entry_path="${STORE_DIR}/${entry_name}.gpg"
+
+  if [ -z "${entry_name}" ]; then
+    abort "USAGE: tpm show ENTRY"
+  fi
+
+  if [ ! -e "${entry_path}" ]; then
+    abort "The requested entry doesn't exist."
+  fi
+
+  gpg --decrypt "${entry_path}"
+}
+
+insert() {
+  entry_name="${1}"
+  entry_path="${STORE_DIR}/${entry_name}.gpg"
+
+  if [ -z "${entry_name}" ]; then
+    abort "USAGE: tpm insert ENTRY"
+  fi
+
+  if [ -e "${entry_path}" ]; then
+    abort "This entry already exists, please remove it first."
+  fi
+
+  password=""
+  readpw "Password for '${entry_name}': " password
+  if [ -t 0 ]; then
+    printf '\n'
+  fi
+
+  if [ -z "${password}" ]; then
+    abort "You didn't specify a password."
+  fi
+
+  mkdir -p "${entry_path%/*}"
+  printf '%s\n' "${password}" | gpg --encrypt \
+    --output "${entry_path}"
+}
+
+##
+# Parse input
+##
+
+if [ $# -gt 2 ]; then
+  abort "tpm doesn't accept more than two arguments."
+fi
+
+case "${1}" in
+  "show")   show   "${2}" ;;
+  "insert") insert "${2}" ;;
+  *) abort "USAGE: tpm COMMAND ENTRY" ;;
+esac
+
+# vim: et:sw=2:sts=2
