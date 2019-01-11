@@ -1,0 +1,2 @@
+#!/bin/bash -x
+bgs ~/.config/background.jpg ~/.config/background1080.jpg ~/.config/background1080.jpg

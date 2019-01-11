@@ -1,0 +1,21 @@
+.github.com	TRUE	/	FALSE	1547199887	_gat	1
+.github.com	TRUE	/	FALSE	1610271288	_octo	GH1.1.450117203.1547199288
+#HttpOnly_.github.com	TRUE	/	TRUE	2178351298	logged_in	yes
+#HttpOnly_.github.com	TRUE	/	TRUE	2178351298	dotcom_user	chrisw310
+.github.com	TRUE	/	FALSE	1610271300	_ga	GA1.2.1754713466.1547199288
+#HttpOnly_github.com	FALSE	/	TRUE	1548408909	user_session	B2EUiYP5OU7SrT874-yXWWd_vej0oeOL-VDZc36xsrpZkKr0
+#HttpOnly_github.com	FALSE	/	TRUE	1548408909	__Host-user_session_same_site	B2EUiYP5OU7SrT874-yXWWd_vej0oeOL-VDZc36xsrpZkKr0
+github.com	FALSE	/	FALSE	1547202909	has_recent_activity	1
+#HttpOnly_.google.com	TRUE	/complete/search	FALSE	1562977800	CGIC	Ij90ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSwqLyo7cT0wLjg
+#HttpOnly_.google.com	TRUE	/search	FALSE	1562977800	CGIC	Ij90ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSwqLyo7cT0wLjg
+#HttpOnly_.google.com	TRUE	/	FALSE	1563010524	NID	154=Sd2T1H-tBiiH5oekHSiqZALc-0hYznjs1dMkfeV4aSyr7OsJCWlLO1QeCvYnxoz2BOwWTmLJ6xZtd8g81rczppD0jcSvt118iyHzL9K9LXcK00HNx1-0JFE4z0zKcEnDQWOZJsyzhT1ENNXG_edGVDRDFoHR4WncYUJMnz3NESI
+.google.com	TRUE	/	FALSE	1549791325	1P_JAR	2019-01-11-09
+#HttpOnly_.google.com	TRUE	/	FALSE	1610271326	ANID	AHWqTUkIuiu69wod0iUzE0AV-6ETQexOjNuxlW4sz9v72i_vAFPxu-0zUMVunQcV
+#HttpOnly_.stackoverflow.com	TRUE	/	FALSE	2682374400	prov	0caece52-50b4-e1e7-ea7d-3122c8663900
+stackoverflow.com	FALSE	/	FALSE	1862818527	notice-ctt	!1
+.stackoverflow.com	TRUE	/	FALSE	1610271327	_ga	GA1.2.431132935.1547199327
+.stackoverflow.com	TRUE	/	FALSE	1547285727	_gid	GA1.2.2046565253.1547199327
+.stackoverflow.com	TRUE	/	FALSE	1547199387	_gat	1
+stackoverflow.com	FALSE	/questions/9683279	FALSE	1547199328	GoogleAdServingTest	
+.stackoverflow.com	TRUE	/	FALSE	1581068128	__qca	P0-1839958013-1547199327620
+.stackoverflow.com	TRUE	/	FALSE	1610271329	__gads	ID=482ee72afbcd6c0a:T=1547199329:S=ALNI_MbGLBryxJ0x2hQe9EBPWKkE3RjXfg
