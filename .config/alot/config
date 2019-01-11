@@ -1,0 +1,13 @@
+theme = "mutt"
+
+terminal_cmd = "st"
+editor_spawn=true
+
+[accounts]
+    [[cjw@fea.st]]
+        realname  = Chris Wilkinson
+        address   = cjw@fea.st
+        sent_box  = maildir:///home/chris/Mail/cw@fea.st/Sent
+        draft_box = maildir:///home/chris/Mail/cw@fea.st/Drafts
+        sent_tags = inbox,
+        #sendmail_command = "msmtp --account=chris@chriswilkinson.co -t"
