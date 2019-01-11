@@ -1,6 +1,6 @@
 [submodule "suckless/dwm"]
 	path = suckless/dwm
-	url = git@github.com:chrisw310/dwm
+	url = https://github.com/chrisw310/dwm
 [submodule "suckless/surf"]
 	path = suckless/surf
 	url = git@github.com:chrisw310/surf
@@ -9,13 +9,13 @@
 	url = git@github.com:chrisw310/st
 [submodule "suckless/noice"]
 	path = suckless/noice
-	url = git@github.com:chrisw310/noice
+	url = https://github.com/chrisw310/noice
 [submodule "suckless/tpm"]
 	path = suckless/tpm
 	url = git@github.com:chrisw310/tpm
 [submodule "suckless/bgs"]
 	path = suckless/bgs
-	url = git@github.com:chrisw310/bgs
+	url = https://github.com/chrisw310/bgs
 [submodule "suckless/sxiv"]
 	path = suckless/sxiv
 	url = git@github.com:chrisw310/sxiv
