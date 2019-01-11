@@ -33,7 +33,7 @@
 	url = https://github.com/chrisw310/tpm
 [submodule "suckless/dmenu"]
 	path = suckless/dmenu
-	url = https://git.suckless.org/dmenu
+	url = git://git.suckless.org/dmenu
 [submodule "suckless/xscreenshot"]
 	path = suckless/xscreenshot
-	url = git://git.2f30.org/xscreenshot.git
+	url = git://git.2f30.org/xscreenshot
