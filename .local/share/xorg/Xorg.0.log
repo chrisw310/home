@@ -388,3 +388,5 @@ X Protocol Version 11, Revision 0
 See https://wayland.freedesktop.org/libinput/doc/1.12.5/touchpad-jumping-cursors.html for details
 [  4140.336] (EE) event5  - bcm5974: kernel bug: Touch jump detected and discarded.
 See https://wayland.freedesktop.org/libinput/doc/1.12.5/touchpad-jumping-cursors.html for details
+[  5715.518] (EE) event5  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.5/touchpad-jumping-cursors.html for details
